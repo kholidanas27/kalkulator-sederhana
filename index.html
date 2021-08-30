@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="mx-auto overflow-hidden mt-10 shadow-lg mb-2 bg-blue-900 shadow-lg border rounded-lg lg:w-2/6 md:w-3/6 sm:w-4/6 font-poppins">
+    <div class="">
+      <div class="p-5 text-white text-center text-3xl bg-blue-900"><span class="text-orange-500">Kalkulator</span></div>
+      <div class="pt-16 p-5 pb-4 text-white text-right text-3xl bg-blue-800">
+          <span class="valueOne"></span>
+          <span class="valueSymble"></span>
+          <span class="valueTwo"></span>
+      </div>     
+        <div class="flex items-stretch bg-blue-900 h-24">
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">7</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">8</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">9</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="symble rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">÷</div>
+            </div>
+        </div>
+            
+        <div class="flex items-stretch bg-blue-900 h-24">
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">4</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">5</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">6</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="symble rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">×</div>
+            </div>
+        </div>
+            
+        <div class="flex items-stretch bg-blue-900 h-24">
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">1</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">2</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">3</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="symble rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">-</div>
+            </div>
+        </div>
+            
+        <div class="flex items-stretch bg-blue-900 h-24">
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">.</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">0</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="x1 first-active rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">00</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div class="symble rounded-full h-20 w-20 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">+</div>
+            </div>
+        </div>
+            
+
+        <div class="flex items-stretch bg-blue-900 h-24 mb-4">
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div id="cancel" class="rounded-lg h-20 w-40 flex items-center bg-blue-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">C</div>
+            </div>
+        
+            <div class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold">
+            <div id="equal" class="rounded-lg h-20 w-40 flex items-center bg-indigo-800 justify-center shadow-lg border-2 border-blue-700 hover:border-2 hover:border-gray-500 focus:outline-none">=</div>
+            </div>
+        </div>
+        </div>
+        </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<script type="text/javascript" src="js/custom.js">
+</script>
+</body>
+</html>
